@@ -1,0 +1,10 @@
+# Open-boundaries
+ &OBCS_PARM01
+# OB_Ieast=0,
+ OB_Iwest=1, 
+ useOBCSsponge=.FALSE.,
+ &
+ 
+# &OBCS_PARM03
+# spongeThickness=50,
+&
