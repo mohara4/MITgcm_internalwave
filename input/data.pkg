@@ -4,5 +4,5 @@
  usecal=.FALSE.,
  usediagnostics=.TRUE.,
  useMNC=.FALSE.,
- useRBCS=.FALSE.,
+ usePP81=.TRUE.,
  &

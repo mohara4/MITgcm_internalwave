@@ -2,7 +2,7 @@
 #-----------------
 # for each output-stream:
 #  filename(n) : prefix of the output file name (only 8.c long) for outp.stream n
-#  frequency(n):< 0 : write snap-shot output every multiple of |frequency| (iter)
+#  frequency(n):< 0 : write snap-shot output every multiple of |frequency| (iter or seconds)
 #               > 0 : write time-average output every multiple of frequency (iter)
 #  levels(:,n) : list of levels to write to file (Notes: declared as REAL)
 #                 when this entry is missing, select all common levels of this list
@@ -14,15 +14,15 @@
 #
    dumpatlast = .TRUE.,
 #---
-  frequency(1) = -43200,
+  frequency(1) = -36000,
   fields(1,1) = 'THETA',
-  filename(1) = '../diags/potT/potT      ',
+  filename(1) = '../diags/changingxres_Pbathy/potT/potT      ',
   timePhase(1)= 0.,
 
-  frequency(2) = -600,
+  frequency(2) = -36000,
   fields(1,2) = 'UVEL',
-  filename(2) = '../diags/UVel/UVel      ',
-  timePhase(2)= 86400.,
+  filename(2) = '../diags/changingxres_Pbathy/UVel/UVel      ',
+  timePhase(2)= 0.,
 
  /
  &DIAG_STATIS_PARMS
